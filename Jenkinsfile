@@ -15,5 +15,12 @@ pipeline {
                 echo 'Docker image done!'
             }
         }
+        stage('Docker run') {
+            steps {
+                echo 'Running docker image..'
+                sh 'docker run -d -p 91:8080 arulelango/mydockerspring'
+                echo 'Docker done!'
+            }
+        }
     }
 }
