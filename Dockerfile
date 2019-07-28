@@ -1,5 +1,5 @@
 FROM alpine:3.4
-EXPOSE 80:8080
+EXPOSE 91:8080
 RUN apk add --no-cache nginx &&\
 mkdir /run/nginx 
 CMD ["nginx", "-g", "daemon off;"]
